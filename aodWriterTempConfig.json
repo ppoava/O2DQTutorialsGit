@@ -1,0 +1,61 @@
+{
+  "OutputDirector": {
+    "debugmode": true,
+    "resfile": "reducedAod",
+    "resfilemode": "RECREATE",
+    "ntfmerge": 1,
+    "OutputDescriptors": [
+      {
+        "table": "AOD/REDUCEDEVENT/0"
+      },
+      {
+        "table": "AOD/REEXTENDED/0"
+      },
+      {
+        "table": "AOD/REVTXCOV/0"
+      },
+      {
+        "table": "AOD/REMULTPV/0"
+      },
+      {
+        "table": "AOD/REMULTALL/0"
+      },
+      {
+        "table": "AOD/REDUCEDTRACK/0"
+      },
+      {
+        "table": "AOD/RTBARREL/0"
+      },
+      {
+        "table": "AOD/RTBARRELPID/0"
+      },
+      {
+        "table": "AOD/RTBARRELCOV/0"
+      },
+      {
+        "table": "AOD/RTASSOC/0"
+      },
+      {
+        "table": "AOD/REDUCEDMUON/0"
+      },
+      {
+        "table": "AOD/RTMUONEXTRA/0"
+      },
+      {
+        "table": "AOD/RMASSOC/0"
+      },
+      {
+        "table": "AOD/RTMUONCOV/0"
+      },
+      {
+        "table": "AOD/REDUCEDMFT/0"
+      },
+      {
+        "table": "AOD/RMFTEXTRA/0"
+      },
+      {
+        "table": "AOD/RMFTASSOC/0"
+      }
+    ]
+  }
+}

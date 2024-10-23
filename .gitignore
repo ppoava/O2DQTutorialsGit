@@ -1,0 +1,5 @@
+*.root
+*.tar
+**/*.root
+**/*.tar
+muon_files/
