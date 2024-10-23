@@ -44,15 +44,18 @@ void drawHist()
    hMuonPbPbMass->Scale(1/(hMuonPbPbMass->Integral()));
 
    // Draw histograms
+   hGlobalMuonMass->SetStats(0);
    hGlobalMuonMass->GetYaxis()->SetTitle("entries / total entries");
    hGlobalMuonMass->Draw("hist E");
    hMuonMass->SetLineColor(kRed);
+   hMuonMass->SetLineWidth(3);
    hMuonMass->Draw("same hist E");
    hMuonPbPbMass->SetLineColor(kGreen);
    hMuonPbPbMass->Draw("same hist E");
   
    // Draw legend
    TLegend *leg = new TLegend(0.2, 0.6, 0.4, 0.8);
+   leg->AddEntry((TObject*)0, "muonQualityCuts", "");
    leg->AddEntry(hGlobalMuonMass, "global muon pp");
    leg->AddEntry(hMuonMass, "standalone muon pp");
    leg->AddEntry(hMuonPbPbMass, "standalone muon PbPb");
