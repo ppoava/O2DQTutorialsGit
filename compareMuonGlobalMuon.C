@@ -48,11 +48,11 @@ void drawHist()
    hGlobalMuonMass->Draw("hist E");
    hMuonMass->SetLineColor(kRed);
    hMuonMass->Draw("same hist E");
-   hMuonPbPbMass->SetLineColor(kBlack);
+   hMuonPbPbMass->SetLineColor(kGreen);
    hMuonPbPbMass->Draw("same hist E");
   
    // Draw legend
-   TLegend *leg = new TLegend(0.6, 0.6, 0.8, 0.8);
+   TLegend *leg = new TLegend(0.2, 0.6, 0.4, 0.8);
    leg->AddEntry(hGlobalMuonMass, "global muon pp");
    leg->AddEntry(hMuonMass, "standalone muon pp");
    leg->AddEntry(hMuonPbPbMass, "standalone muon PbPb");
